@@ -12,6 +12,8 @@
 		1E8F89E620E95F2400A8B7F3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E8F89E420E95F2400A8B7F3 /* MainMenu.xib */; };
 		1E8F89F220E95F2400A8B7F3 /* DarkModeBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F89F120E95F2400A8B7F3 /* DarkModeBarTests.swift */; };
 		1E8F89FD20E95F2400A8B7F3 /* DarkModeBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F89FC20E95F2400A8B7F3 /* DarkModeBarUITests.swift */; };
+		1E8F8A0D20F4A09300A8B7F3 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F8A0C20F4A09300A8B7F3 /* MenuController.swift */; };
+		1E8F8A0F20F51C7400A8B7F3 /* DarkModeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F8A0E20F51C7400A8B7F3 /* DarkModeUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		1E8F89F820E95F2400A8B7F3 /* DarkModeBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarkModeBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E8F89FC20E95F2400A8B7F3 /* DarkModeBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeBarUITests.swift; sourceTree = "<group>"; };
 		1E8F89FE20E95F2400A8B7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E8F8A0C20F4A09300A8B7F3 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		1E8F8A0E20F51C7400A8B7F3 /* DarkModeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,11 +98,13 @@
 		1E8F89DF20E95F2300A8B7F3 /* DarkModeBar */ = {
 			isa = PBXGroup;
 			children = (
-				1E8F89E020E95F2300A8B7F3 /* AppDelegate.swift */,
 				1E8F89E220E95F2400A8B7F3 /* Assets.xcassets */,
+				1E8F89E020E95F2300A8B7F3 /* AppDelegate.swift */,
+				1E8F8A0C20F4A09300A8B7F3 /* MenuController.swift */,
+				1E8F8A0E20F51C7400A8B7F3 /* DarkModeUtils.swift */,
+				1E8F89E820E95F2400A8B7F3 /* DarkModeBar.entitlements */,
 				1E8F89E420E95F2400A8B7F3 /* MainMenu.xib */,
 				1E8F89E720E95F2400A8B7F3 /* Info.plist */,
-				1E8F89E820E95F2400A8B7F3 /* DarkModeBar.entitlements */,
 			);
 			path = DarkModeBar;
 			sourceTree = "<group>";
@@ -251,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8F8A0D20F4A09300A8B7F3 /* MenuController.swift in Sources */,
 				1E8F89E120E95F2300A8B7F3 /* AppDelegate.swift in Sources */,
+				1E8F8A0F20F51C7400A8B7F3 /* DarkModeUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +432,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = de.herrmannplatz.DarkModeBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -443,6 +452,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = de.herrmannplatz.DarkModeBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -463,6 +473,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = de.herrmannplatz.DarkModeBarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -484,6 +495,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = de.herrmannplatz.DarkModeBarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -504,6 +516,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = de.herrmannplatz.DarkModeBarUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -524,6 +537,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = de.herrmannplatz.DarkModeBarUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

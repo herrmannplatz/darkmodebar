@@ -1,0 +1,1 @@
+{"object": {"dependencies": [{"basedOn": null, "packageRef": {"identity": "hotkey", "isLocal": false, "name": "HotKey", "path": "https://github.com/soffes/HotKey"}, "state": {"checkoutState": {"branch": null, "revision": "9f53a1be3bba246788c4cbd505f8532b27e9bde1", "version": "0.1.0"}, "name": "checkout"}, "subpath": "HotKey--7101244180930469369"}]}, "version": 2}
